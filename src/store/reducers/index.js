@@ -187,12 +187,6 @@ const defaultStore = {
 
 const audioReducer = (state = defaultStore, action) => {
   switch (action.type) {
-    case "INIT_LISTINGS":
-      return action.data;
-    case "ADD_LISTING":
-      return [...state, action.data];
-    case "DELETE_LISTING":
-      return state.filter((listing) => listing.name !== action.data);
     default:
       return state;
   }

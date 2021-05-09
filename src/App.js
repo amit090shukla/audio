@@ -12,7 +12,7 @@ function App() {
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
   const [searchValue, setSearchValue] = useState("");
   const { word_timings } = useSelector(
-    (state) => state?.audio?.transcriptData ?? {}
+    (state) => state.audio?.transcriptData ?? {}
   );
 
   useEffect(() => {
